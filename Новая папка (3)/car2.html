@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для аренды автомобиля</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h1>Форма для аренды автомобиля</h1>
+    <form id="car-rental-form">
+        <label for="pickup-date">Дата брони:</label>
+        <input type="date" id="pickup-date" name="pickup-date">
+        <label for="dropoff-date">Дата конца брони:</label>
+        <input type="date" id="dropoff-date" name="dropoff-date">
+        <label for="car-type">тип машины:</label>
+        <select id="car-type" name="car-type">
+            <option value="sedan">Sedan</option>
+            <option value="suv">SUV</option>
+            <option value="truck">Truck</option>
+        </select>
+        <label for="location">Локация:</label>
+        <select id="location" name="location">
+            <option value="spb">Санкт-Петербург</option>
+            <option value="msk">Москва</option>
+            <option value="ekb">Екатеренбург</option>
+            
+        </select>
+        <label for="driver-name">Имя водителя: </label>
+        <input type="text" placeholder="Иванов Иван Иванович" id="driver-name" name="driver-name"><br><br>
+        <label for="driver-email">Почта:</label>
+        <input type="email" id="driver-email" name="driver-email"><br><br>
+        <label for="driver-phone">Номер телефона:</label>
+        <input type="tel" id="driver-phone" name="driver-phone"><br><br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
